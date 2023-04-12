@@ -4,8 +4,8 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 
 part '{{filename.snakeCase()}}_bloc.freezed.dart';
 
-part '{{filename.snakeCase()}}_event.dart'
-part '{{filename.snakeCase()}}_state.dart'
+part '{{filename.snakeCase()}}_event.dart';
+part '{{filename.snakeCase()}}_state.dart';
 
 
 class {{filename.pascalCase()}}Bloc extends Bloc<{{filename.pascalCase()}}Event, {{filename.pascalCase()}}State> {
