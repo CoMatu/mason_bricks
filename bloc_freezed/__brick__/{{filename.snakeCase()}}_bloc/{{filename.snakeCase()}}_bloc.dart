@@ -9,7 +9,7 @@ part '{{filename.snakeCase()}}_state.dart';
 
 
 class {{filename.pascalCase()}}Bloc extends Bloc<{{filename.pascalCase()}}Event, {{filename.pascalCase()}}State> {
- {{filename.pascalCase()}}Bloc() : super(const _Initial{{filename.pascalCase()}}State()){
+ {{filename.pascalCase()}}Bloc() : super(const _Initial{{filename.pascalCase()}}State(result: [])){
  on<{{filename.pascalCase()}}Event>(
 (event, emitter) => event.map<Future<void>>(
   create: (event) => _create(event, emitter),
